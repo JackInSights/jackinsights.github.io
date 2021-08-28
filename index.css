@@ -1,0 +1,98 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    background: url('unsplash.jpg');
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.adviceEye {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #1f1f1f;
+    text-align: center;
+    position: relative;
+}
+
+.adviceEyeInner {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+}
+
+p {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   font-weight: 200;
+   transform: translate(-50%, -50%);
+   color: white;
+}
+
+button {
+    border: none;
+    padding: 0.5em 1em;
+    margin: 1em;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.fade-in-text {
+  animation: fadeIn linear 1s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.circle-throb {
+  animation: breathing 2s ease-out infinite, spin 9s linear infinite;
+}
+
+@keyframes breathing {
+  0% {transform: scale(0.9);}
+  25% {transform: scale(1);}
+  60% {transform: scale(0.9);}
+  100% {transform: scale(0.9);}
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+/* .blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+} USE THIS FOR END OF LIVES*/
